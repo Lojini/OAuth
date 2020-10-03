@@ -20,31 +20,14 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
-	<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="707589246412-jaeptpimad6ojl730c1vi0vn755eqi64.apps.googleusercontent.com">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </head>
 <body>
-
-<script>
-	function onSuccess(googleUser) {
-		console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-	}
-	function onFailure(error) {
-		console.log(error);
-	}
-	function renderButton() {
-		gapi.signin2.render('my-signin2', {
-			'scope': 'profile email',
-			'width': 240,
-			'height': 50,
-			'longtitle': true,
-			'theme': 'dark',
-			'onsuccess': onSuccess,
-			'onfailure': onFailure
-		});
-	}
-</script>
-
-<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 	<div class="limiter">
 		<div class="container-login100">
 
@@ -61,7 +44,15 @@
 						Login to upload your files to google drive
 					</span>
 
-					<div id="my-signin2" style="margin-left: 10px"></div>
+					<div class="col s12 m6 offset-m3 center-align">
+						<a class="oauth-container btn text-white" href="/google-oauth" style=" background-color: #4285F4;text-transform:none">
+							<div class="left ">
+								<img width="20px" style="background-color:white; background-size:30px 40px;margin-top:2px; margin-right:8px" alt="Google sign-in"
+									 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+							</div>
+							Sign in with Google
+						</a>
+					</div>
 
 
 				</form>
