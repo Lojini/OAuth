@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/upload.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+</head>
+<body>
+<div class="limiter">
+
+    <div class="container-login100">
+
+        <div class="zone">
+            <div><a href="/logout">
+                <button style="margin-top:20px;margin-right:30px;float: right">Logout</button>
+            </a></div>
+            <div id="dropZ">
+                <form id="fileUpload" action="/uploadFiles" method="post" enctype="multipart/form-data">
+                    <i class="fa fa-cloud-upload"></i>
+                    <div> Select your files to upload
+                        <br>to Google Drive
+                    </div>
+                    <div class="selectFile">
+                        <input type="file" name="files" id="files" multiple="multiple"/>
+                    </div>
+                    <div><input type="submit"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
